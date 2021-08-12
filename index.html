@@ -4,24 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
-    />
+    ></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Weekly Weather</title>
   </head>
-
-  <nav
-    class="navbar navbar-dark bg-dark"
-    style="background-image: linear-gradient(-90deg, #000066, #0000ff)"
-  >
-    <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1">Weather Forecast</span>
+  <div class="card">
+    <div
+      id="header"
+      class="card-body"
+      style="background-image: linear-gradient(-90deg, #171752, #1414da)"
+    >
+      <h1>Weather Dashboard</h1>
     </div>
-  </nav>
+  </div>
 
-  <body></body>
+  <body>
+  <div class ="row align-items-md-stretch">
+  <div class ="col-md-6">
+  <div class ="h-100 p-5 text-primary bg-light rounded-3">
+  <h2>Search for a City:</h2>
+  <div class = "input-group">
+  <div class = "form-outline">
+<input id="search-input" type="text" id="city" class="form-control" placeholder="City">
+</div>
+<input class= "btn btn-light" type="button" value="Search" id="citySearch">
+  </div>
+  </div>
+  <div class = "container py-4">
+    <div class ="p-5 mb-4 bg-light">
+    <div class = "container-fluid py-5">
+      <h1 class ="display-5 fs-lg">INNPUT</h1>
+      <p class="col-md-8 fs-10">Input</p>
+    </div>
+    </div>
+  </div>
+
+
+  </body>
 </html>
