@@ -29,26 +29,49 @@
   </div>
 
   <body>
-  <div class ="row align-items-md-stretch">
-  <div class ="col-md-6">
-  <div class ="h-100 p-5 text-primary bg-light rounded-3">
-  <h2>Search for a City:</h2>
-  <div class = "input-group">
-  <div class = "form-outline">
-<input id="search-input" type="text" id="city" class="form-control" placeholder="City">
-</div>
-<input class= "btn btn-light" type="button" value="Search" id="citySearch">
-  </div>
-  </div>
-  <div class = "container py-4">
-    <div class ="p-5 mb-4 bg-light">
-    <div class = "container-fluid py-5">
-      <h1 class ="display-5 fs-lg">INNPUT</h1>
-      <p class="col-md-8 fs-10">Input</p>
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-primary bg-light rounded-3">
+          <h2>Search for a City:</h2>
+          <div class="input-group">
+            <form class="form-outline">
+              <input
+                id="searchCity"
+                type="text"
+                id="city"
+                class="form-control"
+                placeholder="City"
+              />
+              <input
+                class="btn btn-light"
+                type="button"
+                value="Search"
+                id="citySearch"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="container py-4">
+          <div class="p-5 mb-4 bg-light">
+            <div
+              id="cityName"
+              class="container-fluid py-5 display-5 fs-lg rounded-3"
+            >
+              <p id="inputInfo" class="col-md-8 fs-10"></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-  </div>
-
-
   </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    type="text/javascript"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    type="text/javascript"
+  ></script>
+  <script src="js.js" type="text/javascript"></script>
 </html>
