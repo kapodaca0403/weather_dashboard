@@ -24,15 +24,16 @@
     <div class="container">
       <div class="row height d-flex justify-content-center align-items-center">
         <div class="col-md-8">
-          <div class="search"> <i class="fa fa-search"></i> <input type="text" class="form-control" placeholder="City">
-            <button class="btn btn-primary">Search for a City:</button>
+          <div class="search"> <i class="fa fa-search"></i> <input id=searchCity type="text"
+              class="form-control searchCity" placeholder="City">
+            <button class="btn btn-primary" type="button" value="Search" id="citySearch">Search for a City:</button>
           </div>
         </div>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-body">
+      <div class="card-body ">
         <h5>Search History:</h5>
         <ul class="list-group my-3 ml-0" id="searchHis"></ul>
       </div>
@@ -52,7 +53,7 @@
         <div class="row">
           <div class="row card-body" style="border:#1414da">
             <div id="weather" class="col-lg-5 p-4" style="border: #1414da">
-              <h2 class='name'>City Name</h2>
+              <h1 class='name' id="cityName">City Name</h1>
               <p>Temp</p>
               <p>Humidity</p>
               <p>Wind</p>
@@ -61,11 +62,17 @@
           </div>
   </aside>
 
-  <div class="card">
+  <div class="card" id="inputInfo">
     <h5 class="card-header">5-day Forecast</h5>
     <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <ul class="card-text">
+        <li>city:</li>
+        <li>temp:</li>
+        <li>wind:</li>
+        <li>humidity:</li>
+        <li>UV:</li>
+
+      </ul>
 
     </div>
   </div>

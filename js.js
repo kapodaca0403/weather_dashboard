@@ -20,6 +20,7 @@ $(document).ready(function () {
           <li>temp: ${city.temp}</li>
           <li>wind: ${city.wind}</li>
           <li>humidty: ${city.humidity}</li>
+          <li>UV: ${city.uv}</li>
           `);
         cityWeather.append(weatherCond);
 
@@ -35,6 +36,10 @@ $(document).ready(function () {
     //function to call city forecast
   });
 });
+
+// get new api?
+var url2 = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=c7f970b272893fcb6a52813e083fda4f
+`;
 
 // need a header that says weather dashboard. DONE
 // need search bar to search for city. DONE
