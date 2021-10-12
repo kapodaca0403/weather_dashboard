@@ -13,6 +13,7 @@ $(document).ready(function () {
   function fetchWeather(city) {
     var lat  = city.coord.lat ;
     var lon = city.coord.lon;
+  
 
   // city.coord.lat =
     var citName = city.name;
@@ -34,7 +35,7 @@ $(document).ready(function () {
         humidEl.innerText=data.current.humidity
         windEl.innerText=data.current.wind_speed
         UVel.innerText=data.current.uvi; 
-        daytemp.innerText = data.daily.dt.temp; 
+        daytemp.innerText = data.daily[0].temp; 
         dayhum.innerText = data.daily.humidity; 
         daywind.innerText = data.daily.wind_speed; 
         dayUV.innerText = data.daily.uvi; 
