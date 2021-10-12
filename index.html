@@ -53,11 +53,20 @@
         <div class="row">
           <div class="row card-body" style="border:#1414da">
             <div id="weather" class="col-lg-5 p-4" style="border: #1414da">
-              <h1 class='name' id="cityName">City Name</h1>
-              <p>Temp</p>
-              <p>Humidity</p>
-              <p>Wind</p>
-              <p>UV</p>
+              <h2 style="text-align: center color black">City:</h2>
+              <h2 class='name' id="cityName" style="color: black"></h2>
+
+              <p>Temp:</p>
+              <p id="currWet"></p>
+
+              <p>Humidity:</p>
+              <p id="currHum"></p>
+
+              <p>Wind:</p>
+              <p id="currWin"></p>
+
+              <p>UV:</p>
+              <p id="currUv"></p>
             </div>
           </div>
   </aside>
@@ -65,12 +74,19 @@
   <div class="card" id="inputInfo">
     <h5 class="card-header">5-day Forecast</h5>
     <div class="card-body">
-      <ul class="card-text">
-        <li>city:</li>
-        <li>temp:</li>
-        <li>wind:</li>
-        <li>humidity:</li>
-        <li>UV:</li>
+      <ul id=inputInfo class="card-text">
+        <h4>city:</h4>
+        <p>Temp:</p>
+        <p id="daytemp"></p>
+
+        <p>Wind:</p>
+        <p id="daywind"></p>
+
+        <p>Humidity:</p>
+        <p id="dayhum"></p>
+
+        <p>UV:</p>
+        <p id="dayUV"></p>
 
       </ul>
 
