@@ -6,13 +6,21 @@ h1 {
   color: white;
   font-family: "Georama", sans-serif;
   height: 75px;
+  
 }
 h2 {
   font-family: "Georama", sans-serif;
-  font-size: 25px;
+  font-size: 35px;
   text-align: center;
+  border-style: inset;
 }
 
 .name {
   text-align: center;
+}
+h3 { 
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  font-size: 20px;
+  border-style: inset;
 }

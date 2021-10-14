@@ -40,10 +40,12 @@ $(document).ready(function () {
         var dayone = ``;
         
         for (let i = 0; i < data.daily.length; i++) {
-          dayone += `<div class="card" id="inputInfo">
-          <h5 class="card-header">5-day Forecast</h5>
-          <div class="card-body">
-          <ul id=inputInfo class="card-text">
+          dayone += ` <div class="row row-cols-1 row-cols-md-3 g-4" style="float: right" >
+          <div class="col" style="width:225px" >
+          <div class="card" style="display:inline-block">
+       
+          <div class="card-body" >
+          <p>Date:${}</p>
           <p>Temp:${data.daily[i].temp.day}</p>
           <p id="dayTemp"></p>
           
@@ -56,7 +58,9 @@ $(document).ready(function () {
           <p>UV:${data.daily[i].uvi}</p>
           <p id="dayUv"></p>
           
-          </ul>
+        
+          </div>
+          </div>
           </div>
           </div>
           `;
