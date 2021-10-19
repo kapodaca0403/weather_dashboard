@@ -1,5 +1,18 @@
 $(document).ready(function () {
   var date = moment().format("MM/DD/YYYY");
+//  var future=  moment().add(1, "days").format("YYYY-MM-DD");
+//  var addtwo = moment().add(2, "days").format("YYYY-MM-DD");
+//  var addthree = moment().add(3, "days").format("YYYY-MM-DD");
+//  var addfour = moment().add(4, "days").format("YYYY-MM-DD");
+//  var addfive = moment().add(5, "days").format("YYYY-MM-DD");
+//  var addsix = moment().add(6, "days").format("YYYY-MM-DD");
+//  var addseven = moment().add(7, "days").format("YYYY-MM-DD");
+//  var addeight = moment().add(8, "days").format("YYYY-MM-DD");
+
+
+
+
+
   var cityEl = document.querySelector("#cityName")
   var tempEl = document.querySelector("#currWet")
   var humidEl = document.querySelector("#currHum")
@@ -7,6 +20,14 @@ $(document).ready(function () {
   var UVel = document.querySelector("#currUv")
   var container = document.querySelector(".Fiveday-container") //. means class
   var currentDate = document.querySelector("#currentdate")
+  // var eightForecast = document.querySelector("#eightDay") // adding date for eight day forecast 
+  //  var foreOne = document.querySelector("#foreOne"); // pls i did this the hard way 
+  //  var foreTwo = document.querySelector("#foreTwo");
+  //  var foreThree = document.querySelector("#foreThree");
+  //  var foreFour = document.querySelector("#foreFour"); 
+  //  var foreFive = document.querySelector("#foreFive");
+  //  var foreSix = document.querySelector("#foreSix");
+  //  var foreSeven = document.querySelector("#foreSeven");
 
 
   function fetchWeather(city) {
@@ -37,6 +58,8 @@ $(document).ready(function () {
         windEl.innerText=data.current.wind_speed
         UVel.innerText=data.current.uvi; 
         currentDate.innerText=date 
+        
+
         var dayone = ``;
         
         for (let i = 0; i < data.daily.length; i++) {
@@ -45,7 +68,8 @@ $(document).ready(function () {
           <div class="card" style="display:inline-block">
        
           <div class="card-body" >
-          <p>Date:${}</p>
+     
+   
           <p>Temp:${data.daily[i].temp.day}</p>
           <p id="dayTemp"></p>
           
